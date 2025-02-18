@@ -64,8 +64,8 @@ function init() {
   
   // 监听编辑器内值的变化（可对外进行事件触发）
   editor.on('change', (cm) => {
-    const v = editor.getValue(); // 获取值
-    console.log(v)
+    const value = editor.getValue(); // 获取值
+    console.log(value)
   });
 }
 
