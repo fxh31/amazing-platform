@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <template id="my-button-template">
+    <style>
+      button {
+        padding: 10px 20px;
+        background: #2196f3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+    <button><slot>默认按钮</slot></button>
+  </template>
+  <my-button>点我！</my-button>
+  <!-- <my-button></my-button> -->
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
