@@ -1,0 +1,17 @@
+{
+  "name": "marked",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "ejs": "^3.1.10",
+    "marked": "^15.0.8"
+  }
+}
