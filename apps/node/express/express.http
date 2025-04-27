@@ -1,0 +1,11 @@
+# GET http://localhost:3000/get?a=1&b=3 HTTP/1.1
+
+# GET http://localhost:3000/get/007 HTTP/1.1
+
+# POST http://localhost:3000/post HTTP/1.1
+# Content-Type: application/json
+
+
+# module routes
+POST http://localhost:3000/user/register HTTP/1.1
+Content-Type: application/json
