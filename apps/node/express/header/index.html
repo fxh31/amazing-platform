@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Content-Type 默认支持：application/x-www-form-urlencoded（url 参数 - name=xsl&age=18） | multipart/form-data（文件） | text/plain（文本）
+    // application/json 需要后端手动设置响应头
+    // fetch('http://localhost:3000/info',{
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({
+    //       name: 'xsl',
+    //       age: 18
+    //     })
+    // })
+    // .then(res => res.json()).then(res => {
+    //     console.log(res)
+    // })
+
+    // fetch('http://localhost:3000/info')
+    // .then(res => {
+    //   const headers = res.headers
+    //   console.log(headers.get('ferhannah'))
+    //   return res.json()
+    // }).then(res => {
+    //     console.log(res)
+    // })
+
+    const sse = new EventSource('http://localhost:3000/sse')
+    // 默认监听 message 事件（也可以自定义）
+    // sse.addEventListener('message', (e) => {
+    //   console.log(e.data)
+    // })
+    sse.addEventListener('test', (e) => {
+      console.log(e.data)
+    })
+     
+  </script>
+</body>
+</html>
