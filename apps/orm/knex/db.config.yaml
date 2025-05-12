@@ -1,0 +1,6 @@
+db:
+  user: root
+  password: "ferhannah"
+  host: localhost
+  port: 3306
+  database: project
