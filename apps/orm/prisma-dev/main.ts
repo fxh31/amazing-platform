@@ -2,7 +2,7 @@ import "reflect-metadata";
 import { InversifyExpressServer } from "inversify-express-utils";
 import { Container } from "inversify";
 
-import { User } from "./src/user/controllerr";
+import { User } from "./src/user/controller";
 import { UserService } from "./src/user/services";
 
 import express from "express";
