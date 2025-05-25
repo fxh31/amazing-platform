@@ -8,6 +8,8 @@ import {
 import { UserService } from "./services"; // 充当类型
 import { inject } from "inversify";
 
+import { JWT } from "../jwt";
+
 /**
  * 控制层：调用接口方法
  */
@@ -16,10 +18,11 @@ import { inject } from "inversify";
 export class User {
   // 提供依赖注入
   constructor(@inject(UserService) private readonly UserService: UserService) {}
-  @GetMapping("/index")
+
+  @GetMapping("/index", JWT.middleware()) // 哪个接口需要就往上面添加 jwt 鉴权
   public async getIndex(req: Request, res: Response) {
-    console.log(req.query);
-    let result = await this.UserService.getList();
+    console.log(req.user.name); // todo: ?
+    const result = await this.UserService.getList();
     res.send(result);
   }
 

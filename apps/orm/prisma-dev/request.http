@@ -11,12 +11,13 @@
 #   "email": "666666666@66.com"
 # }
 
-# GET  http://localhost:3000/user/index?a=333 HTTP/1.1
+GET  http://localhost:3000/user/index?a=333 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6ImY0IiwiZW1haWwiOiIyMjI2NjZAMjIuY29tIiwiaWF0IjoxNzQ4MTM5MDgzLCJleHAiOjE3NDg3NDM4ODN9.IpxcKjZC4T-6V_QtIwLI6Q_zDsXZy6H2bftyOGAqpjg
 
-POST   http://localhost:3000/user/create HTTP/1.1
-Content-Type: application/json
+# POST   http://localhost:3000/user/create HTTP/1.1
+# Content-Type: application/json
 
-{
-  // "name": "f3",
-  "email": "222@22.com"
-}
+# {
+#   "name": "f4",
+#   "email": "222666@22.com"
+# }
