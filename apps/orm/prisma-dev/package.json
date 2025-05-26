@@ -2,6 +2,7 @@
   "name": "prisma-dev",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +17,7 @@
     "express": "^4.20.0",
     "inversify": "^6.0.1",
     "inversify-express-utils": "^6.5.0",
+    "ioredis": "^5.6.1",
     "jsonwebtoken": "^9.0.2",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
